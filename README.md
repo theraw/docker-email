@@ -13,7 +13,7 @@ docker-compose -f dopemail.yml up -d
 6. docker exec -it postal bash
 7. nano /etc/ssl (fill required details cloudflare api key/ email these are required only for ssl certificate generation you can bypass this step if you already have a ssl cert)
 8. ssl yourdomain.com
-9. nano /etc/nginx/sites-enabled/default (change domain name)
-10. nano /opt/postal/config/postal.yml (scroll down and change domain name)
+9. perl -pi -e 's/rawmail.nl/YOURDOMAIN.COM/g' /etc/nginx/sites-enabled/default
+10. perl -pi -e 's/rawmail.nl/YOURDOMAIN.COM/g' /opt/postal/config/postal.yml
 11. docker stop postal; docker start postal
 ```
