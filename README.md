@@ -1,6 +1,18 @@
 # Docker-email
 Why don't we use docker container for mail service?
 
+# Required
+1. Dedicated domain for email service + add it on cloudflare.
+2. Small server with 2GB RAM, 1vCore, 15GB SSD for personal email usage or 8GB RAM, 2vCore, 50GB SSD for Business usage.
+3. Average knowledge on Linux, Docker, Email services.
+
+# What's included
+1. [Postal](https://github.com/postalhq/postal).
+2. SMTP Server on port 25 (insecured no ssl).
+3. Multi-Domain support.
+4. Catch-all option.
+5. API Support.
+
 ```bash
 # Download containers
 docker pull theraw/dopemail:smtp;docker pull theraw/dopemail:mysql; docker pull theraw/dopemail:rabbitmq-server
@@ -27,6 +39,7 @@ docker-compose -f dopemail.yml up -d
 9. exit
 10. docker stop postal; docker start postal
 
+11. Setup DNS for email domain follow => https://github.com/theraw/docker-email/wiki/DNS-Setup
 Visit https://yourdomain.com
 ```
 *`commands that you executed are meant to be executed only once on service creation some of them shouldn't be executed again`*
