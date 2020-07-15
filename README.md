@@ -8,6 +8,7 @@ docker pull theraw/dopemail:smtp;docker pull theraw/dopemail:mysql; docker pull 
 # Download docker-compose template and change 'domainname'
 curl -s https://raw.githubusercontent.com/theraw/docker-email/theraw-beta1/dopemail.yml > dopemail.yml; nano dopemail.yml
 
+# Create Containers.
 docker-compose -f dopemail.yml up -d
 
 # Create rabbitmq user
