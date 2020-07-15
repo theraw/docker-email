@@ -12,7 +12,7 @@ docker-compose -f dopemail.yml up -d
 
 # Generate SSL certificate for your domain and create dashboard user
 3. docker stop postal; docker start postal; docker exec -it postal bash
-4. nano /bin/ssl (fill required details cloudflare api key/ email these are required only for ssl certificate generation you can bypass this step if you already have a ssl cert)
+4. nano /bin/ssl # (fill required details cloudflare api key/ email these are required only for ssl certificate generation you can bypass this step if you already have a ssl cert)
 5. ssl yourdomain.com
 6. postal make-user
 
@@ -24,3 +24,4 @@ docker-compose -f dopemail.yml up -d
 
 Visit https://yourdomain.com
 ```
+*`commands that you executed are meant to be executed only once on service creation some of them shouldn't be executed again`*
