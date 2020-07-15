@@ -13,6 +13,7 @@ Why don't we use docker container for mail service?
 4. Catch-all option.
 5. API Support.
 
+# Installation
 ```bash
 # Download containers
 docker pull theraw/dopemail:smtp;docker pull theraw/dopemail:mysql; docker pull theraw/dopemail:rabbitmq-server
