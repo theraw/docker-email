@@ -45,6 +45,8 @@ Visit https://yourdomain.com
 ```
 **`commands that you executed are meant to be executed only once on service creation some of them shouldn't be executed again`**
 
+# Video Tutorial
+Encoding... (will be here as soon as it's published)
 
 # I don't like this how to remove it from my server?
 1. **`docker stop rabbitmq-server mysql postal; docker rm rabbitmq-server mysql postal`**
