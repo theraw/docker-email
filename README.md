@@ -44,3 +44,12 @@ docker-compose -f dopemail.yml up -d
 Visit https://yourdomain.com
 ```
 *`commands that you executed are meant to be executed only once on service creation some of them shouldn't be executed again`*
+
+
+# I don't like this how to remove it from my server?
+1. docker stop rabbitmq-server mysql postal; docker rm rabbitmq-server mysql postal
+2. docker rmi theraw/dopemail:rabbitmq-server; docker rmi theraw/dopemail:smtp; docker rmi theraw/dopemail:mysql
+
+# I like this but i did some mistake how to relaunch from begin?
+1. docker stop rabbitmq-server mysql postal; docker rm rabbitmq-server mysql postal
+2. Follow tutorial video tutorial again.
